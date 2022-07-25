@@ -4,6 +4,8 @@
 # ussie
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/whats-in-the-box/ussie/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/whats-in-the-box/ussie/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of ussie is to help you to work with European football league
