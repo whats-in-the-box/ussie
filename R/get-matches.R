@@ -72,13 +72,16 @@ get_soccer_data <- function(data_name) {
 #' `uss_countries()` returns the available choices; `"england"` is
 #' the default.
 #'
+#'
 #' This function relies on an internal function, `uss_make_matches()`, to parse
 #' the source data.
 #'
 #' @inherit uss_make_matches params return
+#' @inheritParams dplyr::filter
 #'
 #' @examples
 #' uss_get_matches("england")
+#' uss_get_matches("england", season == 1966)
 #' @export
 #'
 uss_get_matches <- function(country = uss_countries(), ...) {
