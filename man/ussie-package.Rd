@@ -12,6 +12,7 @@ This package allows you to work with European football league data supplied by t
 Useful links:
 \itemize{
   \item \url{https://github.com/whats-in-the-box/ussie}
+  \item \url{https://whats-in-the-box.github.io/ussie/}
   \item Report bugs at \url{https://github.com/whats-in-the-box/ussie/issues}
 }
 
