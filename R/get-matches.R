@@ -81,12 +81,13 @@ get_soccer_data <- function(data_name) {
 #' uss_get_matches("england")
 #' @export
 #'
-uss_get_matches <- function(country = uss_countries()) {
+uss_get_matches <- function(country = uss_countries(), ...) {
 
   # 2.2.1 side effects (errors)
   #
-  # 1. instead, use rlang::arg_match() or match.arg() to validate country
+  # 1. instead, use rlang::arg_match() to validate country
   country <- rlang::arg_match(country)
+
 
   data <- get_soccer_data(country)
 
@@ -105,7 +106,8 @@ uss_get_matches <- function(country = uss_countries()) {
   # (but we aren't doing that here)
   # https://design.tidyverse.org/dots-prefix.html
 
-  uss_make_matches(data, country)
+  uss_make_matches(data, country) |>
+    dplyr::filter(...)
 }
 
 
